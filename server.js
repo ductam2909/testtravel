@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000
 const nextApp = next({ dev })
 const handle = nextApp.getRequestHandler()
 
-connectDB()
+connectDB() 
 
 nextApp.prepare().then(() => {
   app.use('/api/auth', require('./api/auth'))
